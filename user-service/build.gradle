@@ -1,0 +1,6 @@
+plugins{
+    id 'dependency-naming-conventon'
+}
+dependencies {
+    implementation project(':untitled')
+}

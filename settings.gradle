@@ -1,0 +1,5 @@
+rootProject.name = 'mian'
+
+include('user-service')
+include 'untitled'
+includeBuild('../../01_CHEA_PENGHOUNG_DOCKER_COMPOSE_HOMEWORK/docker-compose-homework')

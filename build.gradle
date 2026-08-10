@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+subprojects {
+    apply 'plugin' : 'java'
+
+    group = 'org.example'
+
+    tasks.register("done") {
+        println('Success')
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('com.me:dch:0.0.1')
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}

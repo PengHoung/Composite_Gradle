@@ -1,0 +1,17 @@
+plugins{
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly('org.projectlombok:lombok:1.18.46')
+    annotationProcessor('org.projectlombok:lombok:1.18.46')
+    testImplementation('org.projectlombok:lombok:1.18.46')
+    testRuntimeOnly('org.projectlombok:lombok:1.18.46')
+}
+
+
+
